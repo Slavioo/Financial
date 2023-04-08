@@ -58,5 +58,5 @@ foreach ($symbol in $symbols) {
     }
     
     $csv | Export-Csv $transformFilePath -NoTypeInformation
-    Remove-Item "$extractFilePath\$symbol.csv"
+    Remove-Item $extractFilePath
 }
